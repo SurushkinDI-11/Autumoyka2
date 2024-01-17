@@ -1,0 +1,38 @@
+﻿<Page x:Class="Autumoyka2.aktualkii"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Autumoyka2"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="aktualkii">
+
+    <Grid>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+            </Grid.RowDefinitions>
+
+            <StackPanel Grid.Row="0" Orientation="Horizontal">
+                <TextBox Width="400" Height="35" Margin="20,5,20,5" Background="AliceBlue" TextChanged="TextBox_TextChanged"/>
+                <Button Width="100" Background="LightSkyBlue" BorderThickness="1" Height="30" Margin="0,5,10,5" Content="Поиск" Foreground="Black" FontSize="15" />
+                <Button Width="100" Background="LightSkyBlue" BorderThickness="1" Height="30" Margin="5,5,0,5" Content="Создать" Foreground="Black" FontSize="15" Click="create_Click" />
+            </StackPanel>
+            <DataGrid Margin="21,5,5,5" AutoGenerateColumns="False" IsReadOnly="True"  Grid.Row="1" Height="335"
+ScrollViewer.CanContentScroll="True" 
+ScrollViewer.VerticalScrollBarVisibility="Visible"
+ScrollViewer.HorizontalScrollBarVisibility="Disabled">
+                <DataGrid.Columns>
+
+                </DataGrid.Columns>
+
+
+            </DataGrid>
+
+
+        </Grid>
+
+    </Grid>
+</Page>
